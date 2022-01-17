@@ -1,11 +1,12 @@
 public class PorgramEntryPoint {
-    public static  void  main(String[]args)
-    {
+
+
+    public static void main(String[] args) {
+        Menus menus = new Menus();
         //display welcome screen and developer data
-        Menus.displayInfo();
+        menus.displayInfo();
         //display primary menu for user
-        Menus.diplayPrimaryMenu();
-        //take input from user
-        Menus.handleUserinput();
+        menus.diplayPrimaryMenu();
+
     }
 }
