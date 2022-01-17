@@ -57,6 +57,7 @@ public class Menus {
         switch (userInput) {
             case 1:
                 //add new file
+                actions.createNewDirectory();
                 actions.addNewFile();
                 break;
             case 2:
