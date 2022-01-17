@@ -22,12 +22,19 @@ public class Actions {
 
     public void listAllFilesAscOrder() {
         List files = Arrays.asList(directory.list());
-        Collections.sort(files);
-        for (Object f : files) {
-            System.out.println(f);
-        }
-        System.out.println("*********************************");
+        if(files.size()==0)
+        {
+            System.out.println("Directory is empty");
+            System.out.println("*********************************");
 
+        }
+        else {
+            Collections.sort(files);
+            for (Object f : files) {
+                System.out.println(f);
+            }
+            System.out.println("*********************************");
+        }
     }
 
     public void addNewFile() {
