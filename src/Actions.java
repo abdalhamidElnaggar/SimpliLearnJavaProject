@@ -24,7 +24,7 @@ public class Actions {
         List files = Arrays.asList(directory.list());
         if(files.size()==0)
         {
-            System.out.println("Directory is empty");
+            System.out.println("Directory is empty...Start by adding some file");
             System.out.println("*********************************");
 
         }
